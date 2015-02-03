@@ -1,0 +1,35 @@
+<% provide(:title, "Home") %>
+<h1>StaticPages#home</h1>
+<p>Find me in app/views/static_pages/home.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Link</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+     <tr>
+        <td><%= link_to 'User', users_path %></td>
+     </tr>
+     <tr>
+        <td><%= link_to 'Microposts', microposts_path %></td>
+     </tr>
+     <tr>
+        <td><%= link_to 'Hello', hello_path %></td>
+     </tr>
+     <tr>
+        <td><%= link_to 'About', static_pages_about_path %></td>
+     </tr>
+     <tr>
+        <td><%= link_to 'Help', static_pages_help_path %></td>
+     </tr>
+  </tbody>
+</table>
+
+<br>
