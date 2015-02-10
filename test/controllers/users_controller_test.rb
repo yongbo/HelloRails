@@ -3,6 +3,7 @@ require 'test_helper'
 class UsersControllerTest < ActionController::TestCase
   setup do
     @user = users(:one)
+    @base_title = "Ruby on Rails Tutorial Sample App"
   end
 
   test "should get index" do
@@ -14,6 +15,7 @@ class UsersControllerTest < ActionController::TestCase
   test "should get new" do
     get :new
     assert_response :success
+    assert_select "title", "Signup | #{@base_title}"
   end
 
   test "should create user" do
